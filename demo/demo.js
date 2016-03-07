@@ -9,23 +9,3 @@
 // But we can optionally save the controller in scope and save functions on this
 
 // http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg
-
-angular.module('app', [])
-  .controller('myController', function($scope) {
-    $scope.name = "Short Susan";
-
-    $scope.sayHello = function() {
-      $scope.greeting = "Hello " + $scope.name;
-    }
-
-    $scope.$watch('name', function(name) {
-      if (name) {
-        $scope.errors = null;
-      } else {
-        $scope.errors = "Please enter a name";
-      }
-    })
-
-    this.hello = 123;
-    $scope.controller = this
-  });

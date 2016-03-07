@@ -13,15 +13,12 @@
     <script src='angular.js'></script>
     <script src='demo.js'></script>
   </head>
-  <body ng-app="app" ng-controller="myController">
+  <body ng-app>
 
-    <div>{{name}} {{errors}}</div>
-
-    {{controller.hello}}
+    <div>{{name}}</div>
 
     <input ng-model='name' />
-    <button ng-click="sayHello()">Hello</button>
-    {{greeting}}
+    <button>Hello</button>
 
   </body>
 </html>
