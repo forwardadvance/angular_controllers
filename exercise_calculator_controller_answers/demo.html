@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Templates</title>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="app" ng-controller="CalculatorController">
+    <input ng-model="num1" placeholder='Enter an evil number' />
+    <input ng-model="num2" placeholder='And another' />
+    <ul>
+      <li>
+        {{num1}} + {{num2}} = {{num1 + num2}}
+      </li>
+      <li>
+        {{num1}} - {{num2}} = {{num1 - num2}}
+      </li>
+      <li>
+        {{num1}} * {{num2}} = {{num1 * num2}}
+      </li>
+      <li>
+        {{num1}} / {{num2}} = {{num1 / num2}}
+      </li>
+    </ul>
+    <button ng-click="zero()">Zero</button>
+  </body>
+</html>
